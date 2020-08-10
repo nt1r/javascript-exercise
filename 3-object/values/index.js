@@ -1,3 +1,7 @@
 export default function countTypesNumber(source) {
-  // TODO 6: 在这里写实现代码
+  let sum = 0;
+  Object.keys(source).forEach(property => {
+    sum += parseInt(source[`${property}`], 10);
+  });
+  return sum;
 }
