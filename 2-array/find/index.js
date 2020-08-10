@@ -1,3 +1,4 @@
 export default function find00OldPerson(collection) {
-  // TODO 4: 在这里写实现代码
+  const targetPerson = collection.find(person => person.age <= 20);
+  return targetPerson.name;
 }
